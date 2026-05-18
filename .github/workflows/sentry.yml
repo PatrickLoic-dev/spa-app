@@ -40,3 +40,4 @@ jobs:
           environment: production
           version: ${{ github.sha }}
           sourcemaps: ./dist/assets
+          ignore_missing: true
