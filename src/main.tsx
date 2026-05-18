@@ -4,8 +4,10 @@ import App from './App.tsx';
 import './index.css';
 import './i18n';
 import { initSentry } from './lib/sentry';
+import { initPerformance } from './lib/performance';
 import { worker } from './mocks/browser';
 
+initPerformance();
 initSentry();
 
 worker.start({ onUnhandledRequest: 'bypass' }).then(() => {

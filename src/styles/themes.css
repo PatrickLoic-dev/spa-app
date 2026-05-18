@@ -1,0 +1,33 @@
+/* Theme utility classes that map design tokens to layout colors */
+html,
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.app-surface {
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--radius-md);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--radius-sm);
+}
+
+.btn-secondary {
+    background: var(--color-surface);
+    color: var(--color-text);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Utility to apply theme class on root */
+.theme-toggle {
+    cursor: pointer;
+}
